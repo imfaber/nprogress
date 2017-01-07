@@ -1,0 +1,6 @@
+name: 'NProgress'
+type: module
+description: 'Add NProgress implementation to your site'
+package: Custom
+version: 8.x-1.x
+core: 8.x
