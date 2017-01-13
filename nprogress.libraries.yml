@@ -12,6 +12,7 @@ nprogress.page:
     js/nprogress.page.js: {}
   dependencies:
     - nprogress/nprogress
+    - core/drupal
     - core/drupalSettings
 
 nprogress.ajax:
@@ -21,3 +22,5 @@ nprogress.ajax:
   dependencies:
     - nprogress/nprogress
     - core/jquery
+    - core/drupal
+    - core/drupalSettings
