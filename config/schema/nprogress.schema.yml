@@ -1,0 +1,27 @@
+nprogress.settings:
+  type: config_object
+  label: 'NProgress settings'
+  mapping:
+    page:
+      type: mapping
+      label: 'Page'
+      mapping:
+        display:
+          type: boolean
+          label: 'Display progressbar on every page load'
+        timer:
+          type: integer
+          label: 'Page load timer'
+        color:
+          type: string
+          label: 'Page load progressbar color'
+    ajax:
+      type: mapping
+      label: 'Ajax'
+      mapping:
+        display:
+          type: boolean
+          label: 'Display progressbar on every ajax load'
+        color:
+          type: string
+          label: 'Ajax load progressbar color'
