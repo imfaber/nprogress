@@ -1,0 +1,7 @@
+nprogress.settings_form:
+  path: '/admin/config/user-interface/nprogress'
+  defaults:
+    _form: '\Drupal\nprogress\Form\NProgressSettingsForm'
+    _title: 'NProgress'
+  requirements:
+    _permission: 'access content' # TODO

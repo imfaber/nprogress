@@ -1,0 +1,36 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function nprogress_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.nprogress':
+      $output = '<h2>' . t('NProgress implementation for Drupal 8.') . '</h2>';
+      $output .= '<p>' . t('Currently, this module is under development.') . '</p>';
+      return $output;
+
+    case 'nprogress.settings_form':
+      return t('NProgress settings');
+  }
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function nprogress_page_attachments(array &$page) {
+  $config = \Drupal::config('nprogress.settings');
+
+  if ($config->get('page.display')) {
+    $page['#attached']['library'][] = 'nprogress/nprogress.page';
+    $page['#attached']['drupalSettings']['nprogress']['timer'] = $config->get('page.timer');
+    $page['#attached']['drupalSettings']['nprogress']['page_color'] = $config->get('page.color');
+  }
+
+  if ($config->get('ajax.display')) {
+    $page['#attached']['library'][] = 'nprogress/nprogress.ajax';
+    $page['#attached']['drupalSettings']['nprogress']['ajax_color'] = $config->get('ajax.color');
+  }
+}

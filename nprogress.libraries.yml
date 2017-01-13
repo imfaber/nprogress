@@ -1,0 +1,23 @@
+nprogress:
+  version: 0.2.0
+  css:
+    component:
+      css/nprogress.css: {}
+  js:
+    js/nprogress.js: {}
+
+nprogress.page:
+  version: VERSION
+  js:
+    js/nprogress.page.js: {}
+  dependencies:
+    - nprogress/nprogress
+    - core/drupalSettings
+
+nprogress.ajax:
+  version: VERSION
+  js:
+    js/nprogress.ajax.js: {}
+  dependencies:
+    - nprogress/nprogress
+    - core/jquery

@@ -1,0 +1,5 @@
+nprogress.settings_form:
+  title: 'NProgress'
+  parent: system.admin_config_ui
+  description: 'Configure NProgress behavior.'
+  route_name: nprogress.settings_form

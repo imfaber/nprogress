@@ -1,0 +1,7 @@
+page:
+  display: true
+  timer: 1000
+  color: '#2299dd'
+ajax:
+  display: true
+  color: '#2299dd'
