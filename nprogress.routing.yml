@@ -4,4 +4,4 @@ nprogress.settings_form:
     _form: '\Drupal\nprogress\Form\NProgressSettingsForm'
     _title: 'NProgress'
   requirements:
-    _permission: 'access content' # TODO
+    _permission: 'administer nprogress'
