@@ -1,6 +1,6 @@
 {
   "name": "imfaber/nprogress",
-  "type": "drupal-custom-module",
+  "type": "drupal-module",
   "description": "NProgress",
   "keywords": ["Drupal"],
   "license": "GPL-2.0+",
