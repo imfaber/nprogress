@@ -1,0 +1,14 @@
+{
+  "name": "imfaber/nprogress-gci",
+  "type": "drupal-custom-module",
+  "description": "NProgress",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/imfaber/nprogress-gci",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/example",
+    "source": "http://cgit.drupalcode.org/example"
+  },
+  "require": { }
+}
